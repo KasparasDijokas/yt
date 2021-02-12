@@ -1,0 +1,11 @@
+.sidebar {
+  max-width: 20%;
+  min-width: 200px;
+  display: none;
+  margin-top: 20px;
+  padding-top: 6px;
+
+  @media (min-width: 624px) {
+    display: block;
+  }
+}

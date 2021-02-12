@@ -1,0 +1,112 @@
+$small-text: #606060;
+
+.videoCard {
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+
+  &__imageContainer {
+    position: relative;
+    object-fit: contain;
+    margin-right: 8px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__body {
+    width: 70%;
+    padding: 4px 6px;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__youtubeIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #40494a;
+    fill: #fff;
+    opacity: 0.8;
+    font-size: 3rem !important;
+  }
+
+  &:hover &__youtubeIcon {
+    color: red;
+    opacity: 1;
+  }
+
+  &__videoTitle {
+    display: flex;
+
+    p {
+      padding: 0 0.5rem;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      resize: horizontal;
+    }
+  }
+
+  &__avatar {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  &__channelName {
+    color: $small-text;
+    font-size: 14px;
+    margin-top: 6px;
+    padding-left: 38px;
+  }
+
+  &__description {
+    display: none;
+    color: $small-text;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    span {
+      margin: 0 4px;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+
+    &__description {
+      display: flex;
+      padding-left: 38px;
+      margin-top: 8px;
+      font-size: 14px;
+      max-width: 480px;
+    }
+
+    &__videoTitle {
+      p {
+        font-size: 1rem;
+        resize: none;
+      }
+    }
+
+    &__image {
+      width: 100% !important;
+      object-fit: contain;
+    }
+
+    &__videos {
+      margin-top: 0;
+    }
+  }
+}

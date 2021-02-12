@@ -1,0 +1,24 @@
+$icon-color: #5c5858;
+$text-color: #606060;
+
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: $text-color;
+  width: 100%;
+  padding: 4px 0;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+
+  &:hover .sidebarLink__icon {
+    fill: red;
+  }
+
+  &__icon {
+    margin: 8px 8px 8px 16px;
+  }
+}

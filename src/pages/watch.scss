@@ -1,0 +1,49 @@
+.watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+
+  &__playerContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  &__player {
+    min-width: 100% !important;
+    min-height: 50vh !important;
+  }
+
+  &__videosContainer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-start;
+
+    &__playerContainer {
+      width: 70%;
+    }
+
+    &__player {
+      min-width: 100% !important;
+      min-height: 70vh !important;
+    }
+
+    &__videosContainer {
+      width: 30%;
+      margin-top: 0;
+      padding: 0 20px;
+    }
+  }
+}
